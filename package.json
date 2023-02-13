@@ -25,6 +25,7 @@
   "dependencies": {
     "@pnotify/core": "^5.2.0",
     "inputmask": "^5.0.7",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "numeral": "^2.0.6"
   }
 }
