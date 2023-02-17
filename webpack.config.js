@@ -4,9 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const cssImportLoader =
-  process.env.NODE_ENV === 'production'
-    ? MiniCssExtractPlugin.loader
-    : 'style-loader';
+  process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader';
 
 module.exports = {
   mode: 'development',
@@ -14,7 +12,7 @@ module.exports = {
     index: './src/index.js',
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
